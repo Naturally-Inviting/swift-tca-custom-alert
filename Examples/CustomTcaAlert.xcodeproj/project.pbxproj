@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2A119D3297078320002E8FD /* CustomTcaAlertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A119D2297078320002E8FD /* CustomTcaAlertApp.swift */; };
+		D2A119D7297078330002E8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A119D6297078330002E8FD /* Assets.xcassets */; };
+		D2A119DB297078330002E8FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A119DA297078330002E8FD /* Preview Assets.xcassets */; };
+		D2A119EC2970797A0002E8FD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D2A119EB2970797A0002E8FD /* ComposableArchitecture */; };
+		D2A119EE29707B7E0002E8FD /* TCACustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = D2A119ED29707B7E0002E8FD /* TCACustomAlert */; };
+		D2A11A0B29707C410002E8FD /* CustomAlertTVDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A0A29707C410002E8FD /* CustomAlertTVDemoApp.swift */; };
+		D2A11A0F29707C420002E8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A11A0E29707C420002E8FD /* Assets.xcassets */; };
+		D2A11A1229707C420002E8FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A11A1129707C420002E8FD /* Preview Assets.xcassets */; };
+		D2A11A1729707C690002E8FD /* TCACustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = D2A11A1629707C690002E8FD /* TCACustomAlert */; };
+		D2A11A1929707C690002E8FD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D2A11A1829707C690002E8FD /* ComposableArchitecture */; };
+		D2A11A2129707CE00002E8FD /* CustomAlertWatchDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A2029707CE00002E8FD /* CustomAlertWatchDemoApp.swift */; };
+		D2A11A2529707CE10002E8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A11A2429707CE10002E8FD /* Assets.xcassets */; };
+		D2A11A2829707CE10002E8FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A11A2729707CE10002E8FD /* Preview Assets.xcassets */; };
+		D2A11A2D29707CEA0002E8FD /* TCACustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = D2A11A2C29707CEA0002E8FD /* TCACustomAlert */; };
+		D2A11A2F29707CED0002E8FD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D2A11A2E29707CED0002E8FD /* ComposableArchitecture */; };
+		D2A11A32297082950002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
+		D2A11A33297082A40002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
+		D2A11A34297082A40002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D2A119CF297078320002E8FD /* CustomTcaAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTcaAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A119D2297078320002E8FD /* CustomTcaAlertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTcaAlertApp.swift; sourceTree = "<group>"; };
+		D2A119D6297078330002E8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A119D8297078330002E8FD /* CustomTcaAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomTcaAlert.entitlements; sourceTree = "<group>"; };
+		D2A119DA297078330002E8FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2A11A0829707C410002E8FD /* CustomAlertTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAlertTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A11A0A29707C410002E8FD /* CustomAlertTVDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertTVDemoApp.swift; sourceTree = "<group>"; };
+		D2A11A0E29707C420002E8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A11A1129707C420002E8FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2A11A1E29707CE00002E8FD /* CustomAlertWatchDemo Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomAlertWatchDemo Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A11A2029707CE00002E8FD /* CustomAlertWatchDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertWatchDemoApp.swift; sourceTree = "<group>"; };
+		D2A11A2429707CE10002E8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A11A2729707CE10002E8FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2A11A31297082950002E8FD /* AlertDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDemoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2A119CC297078320002E8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A119EC2970797A0002E8FD /* ComposableArchitecture in Frameworks */,
+				D2A119EE29707B7E0002E8FD /* TCACustomAlert in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A11A0529707C410002E8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A11A1929707C690002E8FD /* ComposableArchitecture in Frameworks */,
+				D2A11A1729707C690002E8FD /* TCACustomAlert in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A11A1B29707CE00002E8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A11A2F29707CED0002E8FD /* ComposableArchitecture in Frameworks */,
+				D2A11A2D29707CEA0002E8FD /* TCACustomAlert in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2A119C6297078320002E8FD = {
+			isa = PBXGroup;
+			children = (
+				D2A11A302970827A0002E8FD /* Shared */,
+				D2A119D1297078320002E8FD /* CustomTcaAlert */,
+				D2A11A0929707C410002E8FD /* CustomAlertTVDemo */,
+				D2A11A1F29707CE00002E8FD /* CustomAlertWatchDemo Watch App */,
+				D2A119D0297078320002E8FD /* Products */,
+				D2A119E7297079150002E8FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2A119D0297078320002E8FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2A119CF297078320002E8FD /* CustomTcaAlert.app */,
+				D2A11A0829707C410002E8FD /* CustomAlertTVDemo.app */,
+				D2A11A1E29707CE00002E8FD /* CustomAlertWatchDemo Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A119D1297078320002E8FD /* CustomTcaAlert */ = {
+			isa = PBXGroup;
+			children = (
+				D2A119D2297078320002E8FD /* CustomTcaAlertApp.swift */,
+				D2A119D6297078330002E8FD /* Assets.xcassets */,
+				D2A119D8297078330002E8FD /* CustomTcaAlert.entitlements */,
+				D2A119D9297078330002E8FD /* Preview Content */,
+			);
+			path = CustomTcaAlert;
+			sourceTree = "<group>";
+		};
+		D2A119D9297078330002E8FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D2A119DA297078330002E8FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2A119E7297079150002E8FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2A11A0929707C410002E8FD /* CustomAlertTVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D2A11A0A29707C410002E8FD /* CustomAlertTVDemoApp.swift */,
+				D2A11A0E29707C420002E8FD /* Assets.xcassets */,
+				D2A11A1029707C420002E8FD /* Preview Content */,
+			);
+			path = CustomAlertTVDemo;
+			sourceTree = "<group>";
+		};
+		D2A11A1029707C420002E8FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D2A11A1129707C420002E8FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2A11A1F29707CE00002E8FD /* CustomAlertWatchDemo Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D2A11A2029707CE00002E8FD /* CustomAlertWatchDemoApp.swift */,
+				D2A11A2429707CE10002E8FD /* Assets.xcassets */,
+				D2A11A2629707CE10002E8FD /* Preview Content */,
+			);
+			path = "CustomAlertWatchDemo Watch App";
+			sourceTree = "<group>";
+		};
+		D2A11A2629707CE10002E8FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D2A11A2729707CE10002E8FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2A11A302970827A0002E8FD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D2A11A31297082950002E8FD /* AlertDemoView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2A119CE297078320002E8FD /* CustomTcaAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A119DE297078330002E8FD /* Build configuration list for PBXNativeTarget "CustomTcaAlert" */;
+			buildPhases = (
+				D2A119CB297078320002E8FD /* Sources */,
+				D2A119CC297078320002E8FD /* Frameworks */,
+				D2A119CD297078320002E8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomTcaAlert;
+			packageProductDependencies = (
+				D2A119EB2970797A0002E8FD /* ComposableArchitecture */,
+				D2A119ED29707B7E0002E8FD /* TCACustomAlert */,
+			);
+			productName = CustomTcaAlert;
+			productReference = D2A119CF297078320002E8FD /* CustomTcaAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2A11A0729707C410002E8FD /* CustomAlertTVDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A11A1329707C420002E8FD /* Build configuration list for PBXNativeTarget "CustomAlertTVDemo" */;
+			buildPhases = (
+				D2A11A0429707C410002E8FD /* Sources */,
+				D2A11A0529707C410002E8FD /* Frameworks */,
+				D2A11A0629707C410002E8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomAlertTVDemo;
+			packageProductDependencies = (
+				D2A11A1629707C690002E8FD /* TCACustomAlert */,
+				D2A11A1829707C690002E8FD /* ComposableArchitecture */,
+			);
+			productName = CustomAlertTVDemo;
+			productReference = D2A11A0829707C410002E8FD /* CustomAlertTVDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2A11A1D29707CE00002E8FD /* CustomAlertWatchDemo Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A11A2929707CE10002E8FD /* Build configuration list for PBXNativeTarget "CustomAlertWatchDemo Watch App" */;
+			buildPhases = (
+				D2A11A1A29707CE00002E8FD /* Sources */,
+				D2A11A1B29707CE00002E8FD /* Frameworks */,
+				D2A11A1C29707CE00002E8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CustomAlertWatchDemo Watch App";
+			packageProductDependencies = (
+				D2A11A2C29707CEA0002E8FD /* TCACustomAlert */,
+				D2A11A2E29707CED0002E8FD /* ComposableArchitecture */,
+			);
+			productName = "CustomAlertWatchDemo Watch App";
+			productReference = D2A11A1E29707CE00002E8FD /* CustomAlertWatchDemo Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2A119C7297078320002E8FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D2A119CE297078320002E8FD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D2A11A0729707C410002E8FD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D2A11A1D29707CE00002E8FD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D2A119CA297078320002E8FD /* Build configuration list for PBXProject "CustomTcaAlert" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2A119C6297078320002E8FD;
+			packageReferences = (
+				D2A119EA2970797A0002E8FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = D2A119D0297078320002E8FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2A119CE297078320002E8FD /* CustomTcaAlert */,
+				D2A11A0729707C410002E8FD /* CustomAlertTVDemo */,
+				D2A11A1D29707CE00002E8FD /* CustomAlertWatchDemo Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2A119CD297078320002E8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A119DB297078330002E8FD /* Preview Assets.xcassets in Resources */,
+				D2A119D7297078330002E8FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A11A0629707C410002E8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A11A1229707C420002E8FD /* Preview Assets.xcassets in Resources */,
+				D2A11A0F29707C420002E8FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A11A1C29707CE00002E8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A11A2829707CE10002E8FD /* Preview Assets.xcassets in Resources */,
+				D2A11A2529707CE10002E8FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2A119CB297078320002E8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A11A32297082950002E8FD /* AlertDemoView.swift in Sources */,
+				D2A119D3297078320002E8FD /* CustomTcaAlertApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A11A0429707C410002E8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A11A33297082A40002E8FD /* AlertDemoView.swift in Sources */,
+				D2A11A0B29707C410002E8FD /* CustomAlertTVDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A11A1A29707CE00002E8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A11A34297082A40002E8FD /* AlertDemoView.swift in Sources */,
+				D2A11A2129707CE00002E8FD /* CustomAlertWatchDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D2A119DC297078330002E8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2A119DD297078330002E8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D2A119DF297078330002E8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CustomTcaAlert/CustomTcaAlert.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomTcaAlert/Preview Content\"";
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naturallyinviting.CustomTcaAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2A119E0297078330002E8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CustomTcaAlert/CustomTcaAlert.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomTcaAlert/Preview Content\"";
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naturallyinviting.CustomTcaAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2A11A1429707C420002E8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomAlertTVDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naturallyinviting.CustomAlertTVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Debug;
+		};
+		D2A11A1529707C420002E8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomAlertTVDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naturallyinviting.CustomAlertTVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2A11A2A29707CE10002E8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomAlertWatchDemo Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomAlertWatchDemo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		D2A11A2B29707CE10002E8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomAlertWatchDemo Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomAlertWatchDemo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2A119CA297078320002E8FD /* Build configuration list for PBXProject "CustomTcaAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A119DC297078330002E8FD /* Debug */,
+				D2A119DD297078330002E8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A119DE297078330002E8FD /* Build configuration list for PBXNativeTarget "CustomTcaAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A119DF297078330002E8FD /* Debug */,
+				D2A119E0297078330002E8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A11A1329707C420002E8FD /* Build configuration list for PBXNativeTarget "CustomAlertTVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A11A1429707C420002E8FD /* Debug */,
+				D2A11A1529707C420002E8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A11A2929707CE10002E8FD /* Build configuration list for PBXNativeTarget "CustomAlertWatchDemo Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A11A2A29707CE10002E8FD /* Debug */,
+				D2A11A2B29707CE10002E8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2A119EA2970797A0002E8FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 0.47.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2A119EB2970797A0002E8FD /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2A119EA2970797A0002E8FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		D2A119ED29707B7E0002E8FD /* TCACustomAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCACustomAlert;
+		};
+		D2A11A1629707C690002E8FD /* TCACustomAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCACustomAlert;
+		};
+		D2A11A1829707C690002E8FD /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2A119EA2970797A0002E8FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		D2A11A2C29707CEA0002E8FD /* TCACustomAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCACustomAlert;
+		};
+		D2A11A2E29707CED0002E8FD /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2A119EA2970797A0002E8FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D2A119C7297078320002E8FD /* Project object */;
+}

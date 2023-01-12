@@ -5,6 +5,6 @@
       location = "group:">
    </FileRef>
    <FileRef
-      location = "group:../CustomTcaAlert/CustomTcaAlert.xcodeproj">
+      location = "group:Examples/CustomTcaAlert.xcodeproj">
    </FileRef>
 </Workspace>

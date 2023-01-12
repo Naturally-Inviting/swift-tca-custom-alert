@@ -13,7 +13,7 @@ This demo application can be accessed via `TCACustomAlert.xcworkspace`
 
 |Presentation Demo|
 |:-:|
-|![demo app](Demo.gif)|
+|<img src="Demo.gif" width="250"/>|
 
 ## 🏎️ Road Map
 

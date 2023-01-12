@@ -50,6 +50,7 @@
 		D2A11A31297082950002E8FD /* AlertDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDemoView.swift; sourceTree = "<group>"; };
 		D2BB950F297094A0007CCC6D /* DemoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoReducer.swift; sourceTree = "<group>"; };
 		D2BB9513297094C6007CCC6D /* DemoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFormView.swift; sourceTree = "<group>"; };
+		D2D09E902970C80D00B274EC /* TCACustomAlert */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TCACustomAlert; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		D2A119C6297078320002E8FD = {
 			isa = PBXGroup;
 			children = (
+				D2D09E902970C80D00B274EC /* TCACustomAlert */,
 				D2A11A302970827A0002E8FD /* Shared */,
 				D2A119D1297078320002E8FD /* CustomTcaAlert */,
 				D2A11A0929707C410002E8FD /* CustomAlertTVDemo */,

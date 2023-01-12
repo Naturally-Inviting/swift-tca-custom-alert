@@ -5,22 +5,25 @@ public struct CustomTcaAlert: ReducerProtocol {
     public struct State: Equatable {
         /// X, Y postion where the alert will appear from.
         /// Defaults to bottom of the screen.
-        public let alertStartPosition: CGSize
+        public var alertStartPosition: CGSize
         /// X, Y position where the alert will be when shown to the user.
         /// Defaults to center of the screen.
-        public let alertPresentedPosition: CGSize
+        public var alertPresentedPosition: CGSize
         /// X, Y position where the alert will dismiss towards.
         /// Defaults to top of screen.
-        public let alertEndPosition: CGSize
+        public var alertEndPosition: CGSize
         /// Opacity of the scrim view behind the modal.
         /// Defaults to 60%.
-        public let endScrimOpacity: CGFloat
-        /// Boolean reflecting if the alert is currently presented.
-        public internal(set) var isPresented: Bool
+        public var endScrimOpacity: CGFloat
         /// Boolean reflecting if tapping the scrim view will dismiss the alert.
         /// Defaults to `true`.
         /// Dismissal requires sending ``RealtimeAlert.Action.dismiss`` into the reducer.
-        public let dismissOnScrimTap: Bool
+        public var dismissOnScrimTap: Bool
+        /// Boolean reflecting if the alert is currently presented.
+        public internal(set) var isPresented: Bool
+        
+        // Animated propertes should not be available outside
+        // the scope of the Reducer
         
         internal var modalOffset: CGSize
         internal var modalOpacity: CGFloat

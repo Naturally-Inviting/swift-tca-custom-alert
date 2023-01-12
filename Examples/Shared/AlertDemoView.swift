@@ -3,35 +3,37 @@ import SwiftUI
 import TCACustomAlert
 
 struct AlertDemoView: View {
-    private struct AlertDemoReducer: ReducerProtocol {
-        struct State: Equatable {
-            var alert: CustomTcaAlert.State = .init()
-        }
-        
-        enum Action: Equatable {
-            case alert(CustomTcaAlert.Action)
-        }
-        
-        var body: some ReducerProtocol<State, Action> {
-            Scope(state: \.alert, action: /Action.alert) {
-                CustomTcaAlert()
-            }
-        }
-    }
     
     private let store = Store(
         initialState: .init(),
-        reducer: AlertDemoReducer()
+        reducer: AlertDemoReducer()._printChanges()
     )
     
     var body: some View {
         WithViewStore(store) { viewStore in
-            VStack {
-                Button("Present", action: { viewStore.send(.alert(.present)) })
+            ZStack {
+                FormView(
+                    store: self.store.scope(
+                        state: \.form,
+                        action: AlertDemoReducer.Action.form
+                    )
+                )
+                
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Button("Present", action: { viewStore.send(.alert(.present)) })
+                            .padding()
+                        Spacer()
+                    }
+                    .background(.thinMaterial)
+                }
+                .frame(maxWidth: .infinity)
             }
             .customTcaAlert(
                 store.scope(
-                    state: \.alert,
+                    state: \.alertState,
                     action: AlertDemoReducer.Action.alert
                 ),
                 content: {

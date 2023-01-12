@@ -25,6 +25,12 @@
 		D2A11A32297082950002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
 		D2A11A33297082A40002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
 		D2A11A34297082A40002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
+		D2BB9510297094A0007CCC6D /* DemoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB950F297094A0007CCC6D /* DemoReducer.swift */; };
+		D2BB9511297094A0007CCC6D /* DemoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB950F297094A0007CCC6D /* DemoReducer.swift */; };
+		D2BB9512297094A0007CCC6D /* DemoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB950F297094A0007CCC6D /* DemoReducer.swift */; };
+		D2BB9514297094C6007CCC6D /* DemoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB9513297094C6007CCC6D /* DemoFormView.swift */; };
+		D2BB9515297094C6007CCC6D /* DemoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB9513297094C6007CCC6D /* DemoFormView.swift */; };
+		D2BB9516297094C6007CCC6D /* DemoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB9513297094C6007CCC6D /* DemoFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,8 @@
 		D2A11A2429707CE10002E8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2A11A2729707CE10002E8FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2A11A31297082950002E8FD /* AlertDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDemoView.swift; sourceTree = "<group>"; };
+		D2BB950F297094A0007CCC6D /* DemoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoReducer.swift; sourceTree = "<group>"; };
+		D2BB9513297094C6007CCC6D /* DemoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				D2A11A31297082950002E8FD /* AlertDemoView.swift */,
+				D2BB950F297094A0007CCC6D /* DemoReducer.swift */,
+				D2BB9513297094C6007CCC6D /* DemoFormView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -313,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A11A32297082950002E8FD /* AlertDemoView.swift in Sources */,
+				D2BB9514297094C6007CCC6D /* DemoFormView.swift in Sources */,
+				D2BB9510297094A0007CCC6D /* DemoReducer.swift in Sources */,
 				D2A119D3297078320002E8FD /* CustomTcaAlertApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A11A33297082A40002E8FD /* AlertDemoView.swift in Sources */,
+				D2BB9515297094C6007CCC6D /* DemoFormView.swift in Sources */,
+				D2BB9511297094A0007CCC6D /* DemoReducer.swift in Sources */,
 				D2A11A0B29707C410002E8FD /* CustomAlertTVDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +345,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A11A34297082A40002E8FD /* AlertDemoView.swift in Sources */,
+				D2BB9516297094C6007CCC6D /* DemoFormView.swift in Sources */,
+				D2BB9512297094A0007CCC6D /* DemoReducer.swift in Sources */,
 				D2A11A2129707CE00002E8FD /* CustomAlertWatchDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

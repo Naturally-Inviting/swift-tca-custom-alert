@@ -10,6 +10,8 @@ let package = Package(
         .macOS(.v13),
         .tvOS(.v16),
         .watchOS(.v9)
+        /// This method of presentation for WatchOS is possible but not recomended.
+        /// For Alerts, we recomend the SwiftUI standard library alert.
     ],
     products: [
         .library(

@@ -119,3 +119,29 @@ public struct CustomTcaAlert: ReducerProtocol {
         }
     }
 }
+
+internal extension CustomTcaAlert.State {
+    init(
+        alertStartPosition: CGSize = .init(width: 0, height: 500),
+        alertPresentedPosition: CGSize = .zero,
+        alertEndPosition: CGSize = .init(width: 0, height: -500),
+        endScrimOpacity: CGFloat = 0.6,
+        dismissOnScrimTap: Bool = true,
+        modalOffset: CGSize = .zero,
+        modalOpacity: CGFloat = .zero,
+        scrimOpacity: CGFloat = .zero,
+        contentAllowsHitTesting: Bool = true,
+        isPresented: Bool = false
+    ) {
+        self.alertStartPosition = alertStartPosition
+        self.alertEndPosition = alertEndPosition
+        self.alertPresentedPosition = alertPresentedPosition
+        self.endScrimOpacity = endScrimOpacity
+        self.modalOffset = modalOffset
+        self.modalOpacity = modalOpacity
+        self.scrimOpacity = scrimOpacity
+        self.contentAllowsHitTesting = contentAllowsHitTesting
+        self.isPresented = isPresented
+        self.dismissOnScrimTap = dismissOnScrimTap
+    }
+}

@@ -21,6 +21,10 @@ let package = Package(
         .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             from: "0.47.2"
+        ),
+        .package(
+            url: "https://github.com/pointfreeco/swift-snapshot-testing",
+            from: "1.9.0"
         )
     ],
     targets: [
@@ -30,6 +34,21 @@ let package = Package(
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
             ]
         ),
-        .testTarget(name: "TCACustomAlertTests", dependencies: ["TCACustomAlert"])
+        .testTarget(
+            name: "TCACustomAlertTests",
+            dependencies: [
+                "TCACustomAlert",
+            ]
+        ),
+        .testTarget(
+            name: "AlertSnapshots",
+            dependencies: [
+                "TCACustomAlert",
+                .product(name: "SnapshotTesting", package: "swift-snapshot-testing")
+            ],
+            exclude: [
+                "__Snapshots__"
+            ]
+        )
     ]
 )

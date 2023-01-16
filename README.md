@@ -18,5 +18,5 @@ This demo application can be accessed via `TCACustomAlert.xcworkspace`
 
 ## 🏎️ Road Map
 
-- [ ] Tests
+- [x] Tests
 - [ ] Accessibility

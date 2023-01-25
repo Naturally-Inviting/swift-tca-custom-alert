@@ -8,9 +8,47 @@
 
 This package allows for custom alert presentation with [The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) from [Point-Free](https://www.pointfree.co).
 
+### Installation 
+
+Install in Xcode as a package dependency.
+  1. From the **File** menu, select **Add Packages...**
+  2. Enter "https://github.com/Naturally-Inviting/swift-tca-custom-aler" into the package URL field.
+     
+## Basics 
+
+To create an alert, you need to have a store which can scope the changes of `CustomTcaAlert.State` and `CustomTcaAlert.Action`. Then pass in a view as the alert content.
+
+```swift
+import TCACustomAlert
+
+WithViewStore(store) { _ in 
+  VStack {
+    ContentView()
+  }
+  .customTcaAlert(
+    store.scope(
+        state: \.alertState,
+        action: AlertDemoReducer.Action.alert
+    ),
+    content: {
+        VStack(spacing: 16) {
+            Text("Hello")
+                .font(.headline)
+            Button("Dismiss", action: { viewStore.send(.alert(.dismiss)) })
+                .padding(.top)
+        }
+        .padding()
+        .background()
+        .cornerRadius(8)
+        .padding(.horizontal)
+    }
+  )
+}
+```
+
 ### Demo
 
-This demo application can be accessed via `TCACustomAlert.xcworkspace`
+This demo application can be accessed via `TCACustomAlert.xcworkspace`. 
 
 |Presentation Demo|
 |:-:|

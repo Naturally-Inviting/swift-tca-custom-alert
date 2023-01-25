@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "TCACustomAlert",
+    name: "swift-tca-custom-alert",
     platforms: [
         .iOS(.v16),
         .macOS(.v13),

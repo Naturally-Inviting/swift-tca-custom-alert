@@ -11,20 +11,18 @@
 		D2A119D7297078330002E8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A119D6297078330002E8FD /* Assets.xcassets */; };
 		D2A119DB297078330002E8FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A119DA297078330002E8FD /* Preview Assets.xcassets */; };
 		D2A119EC2970797A0002E8FD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D2A119EB2970797A0002E8FD /* ComposableArchitecture */; };
-		D2A119EE29707B7E0002E8FD /* TCACustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = D2A119ED29707B7E0002E8FD /* TCACustomAlert */; };
 		D2A11A0B29707C410002E8FD /* CustomAlertTVDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A0A29707C410002E8FD /* CustomAlertTVDemoApp.swift */; };
 		D2A11A0F29707C420002E8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A11A0E29707C420002E8FD /* Assets.xcassets */; };
 		D2A11A1229707C420002E8FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A11A1129707C420002E8FD /* Preview Assets.xcassets */; };
-		D2A11A1729707C690002E8FD /* TCACustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = D2A11A1629707C690002E8FD /* TCACustomAlert */; };
 		D2A11A1929707C690002E8FD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D2A11A1829707C690002E8FD /* ComposableArchitecture */; };
 		D2A11A2129707CE00002E8FD /* CustomAlertWatchDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A2029707CE00002E8FD /* CustomAlertWatchDemoApp.swift */; };
 		D2A11A2529707CE10002E8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A11A2429707CE10002E8FD /* Assets.xcassets */; };
 		D2A11A2829707CE10002E8FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A11A2729707CE10002E8FD /* Preview Assets.xcassets */; };
-		D2A11A2D29707CEA0002E8FD /* TCACustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = D2A11A2C29707CEA0002E8FD /* TCACustomAlert */; };
 		D2A11A2F29707CED0002E8FD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D2A11A2E29707CED0002E8FD /* ComposableArchitecture */; };
 		D2A11A32297082950002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
 		D2A11A33297082A40002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
 		D2A11A34297082A40002E8FD /* AlertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A11A31297082950002E8FD /* AlertDemoView.swift */; };
+		D2A954E82981A1C300D60294 /* TCACustomAlert in Frameworks */ = {isa = PBXBuildFile; productRef = D2A954E72981A1C300D60294 /* TCACustomAlert */; };
 		D2BB9510297094A0007CCC6D /* DemoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB950F297094A0007CCC6D /* DemoReducer.swift */; };
 		D2BB9511297094A0007CCC6D /* DemoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB950F297094A0007CCC6D /* DemoReducer.swift */; };
 		D2BB9512297094A0007CCC6D /* DemoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB950F297094A0007CCC6D /* DemoReducer.swift */; };
@@ -48,9 +46,9 @@
 		D2A11A2429707CE10002E8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2A11A2729707CE10002E8FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2A11A31297082950002E8FD /* AlertDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDemoView.swift; sourceTree = "<group>"; };
+		D2A954E92981A1FC00D60294 /* swift-tca-custom-alert */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-tca-custom-alert"; path = ..; sourceTree = "<group>"; };
 		D2BB950F297094A0007CCC6D /* DemoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoReducer.swift; sourceTree = "<group>"; };
 		D2BB9513297094C6007CCC6D /* DemoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFormView.swift; sourceTree = "<group>"; };
-		D2D09E902970C80D00B274EC /* TCACustomAlert */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TCACustomAlert; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A119EC2970797A0002E8FD /* ComposableArchitecture in Frameworks */,
-				D2A119EE29707B7E0002E8FD /* TCACustomAlert in Frameworks */,
+				D2A954E82981A1C300D60294 /* TCACustomAlert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +66,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A11A1929707C690002E8FD /* ComposableArchitecture in Frameworks */,
-				D2A11A1729707C690002E8FD /* TCACustomAlert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +74,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A11A2F29707CED0002E8FD /* ComposableArchitecture in Frameworks */,
-				D2A11A2D29707CEA0002E8FD /* TCACustomAlert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +83,7 @@
 		D2A119C6297078320002E8FD = {
 			isa = PBXGroup;
 			children = (
-				D2D09E902970C80D00B274EC /* TCACustomAlert */,
+				D2A954E92981A1FC00D60294 /* swift-tca-custom-alert */,
 				D2A11A302970827A0002E8FD /* Shared */,
 				D2A119D1297078320002E8FD /* CustomTcaAlert */,
 				D2A11A0929707C410002E8FD /* CustomAlertTVDemo */,
@@ -197,7 +193,7 @@
 			name = CustomTcaAlert;
 			packageProductDependencies = (
 				D2A119EB2970797A0002E8FD /* ComposableArchitecture */,
-				D2A119ED29707B7E0002E8FD /* TCACustomAlert */,
+				D2A954E72981A1C300D60294 /* TCACustomAlert */,
 			);
 			productName = CustomTcaAlert;
 			productReference = D2A119CF297078320002E8FD /* CustomTcaAlert.app */;
@@ -217,7 +213,6 @@
 			);
 			name = CustomAlertTVDemo;
 			packageProductDependencies = (
-				D2A11A1629707C690002E8FD /* TCACustomAlert */,
 				D2A11A1829707C690002E8FD /* ComposableArchitecture */,
 			);
 			productName = CustomAlertTVDemo;
@@ -238,7 +233,6 @@
 			);
 			name = "CustomAlertWatchDemo Watch App";
 			packageProductDependencies = (
-				D2A11A2C29707CEA0002E8FD /* TCACustomAlert */,
 				D2A11A2E29707CED0002E8FD /* ComposableArchitecture */,
 			);
 			productName = "CustomAlertWatchDemo Watch App";
@@ -717,27 +711,19 @@
 			package = D2A119EA2970797A0002E8FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
-		D2A119ED29707B7E0002E8FD /* TCACustomAlert */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TCACustomAlert;
-		};
-		D2A11A1629707C690002E8FD /* TCACustomAlert */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TCACustomAlert;
-		};
 		D2A11A1829707C690002E8FD /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D2A119EA2970797A0002E8FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
-		D2A11A2C29707CEA0002E8FD /* TCACustomAlert */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TCACustomAlert;
-		};
 		D2A11A2E29707CED0002E8FD /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D2A119EA2970797A0002E8FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		D2A954E72981A1C300D60294 /* TCACustomAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCACustomAlert;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

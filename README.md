@@ -21,7 +21,7 @@ To create an alert, you need to have a store which can scope the changes of `Cus
 ```swift
 import TCACustomAlert
 
-WithViewStore(store) { _ in 
+WithViewStore(store) { viewStore in 
   VStack {
     ContentView()
   }

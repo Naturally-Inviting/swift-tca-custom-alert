@@ -21,28 +21,32 @@ To create an alert, you need to have a store which can scope the changes of `Cus
 ```swift
 import TCACustomAlert
 
-WithViewStore(store) { viewStore in 
-  VStack {
-    ContentView()
-  }
-  .customTcaAlert(
-    store.scope(
-        state: \.alertState,
-        action: AlertDemoReducer.Action.alert
-    ),
-    content: {
-        VStack(spacing: 16) {
-            Text("Hello")
-                .font(.headline)
-            Button("Dismiss", action: { viewStore.send(.alert(.dismiss)) })
-                .padding(.top)
+struct MyView: View {
+    let store: StoreOf<MyFeature>
+    
+    var body: some View { 
+        VStack {
+            ContentView()
         }
-        .padding()
-        .background()
-        .cornerRadius(8)
-        .padding(.horizontal)
+        .customTcaAlert(
+            store.scope(
+                state: \.alertState,
+                action: \.alert
+            ),
+            content: {
+                VStack(spacing: 16) {
+                    Text("Hello")
+                        .font(.headline)
+                    Button("Dismiss", action: { store.send(.alert(.dismiss)) })
+                        .padding(.top)
+                }
+                .padding()
+                .background()
+                .cornerRadius(8)
+                .padding(.horizontal)
+            }
+        )
     }
-  )
 }
 ```
 

@@ -10,7 +10,7 @@ public extension View {
         self
             .modifier(
                 AlertViewModifier(
-                    viewStore: ViewStore(store),
+                    store: store,
                     alertContent: content
                 )
             )
@@ -18,33 +18,33 @@ public extension View {
 }
 
 internal struct AlertViewModifier<AlertContent>: ViewModifier where AlertContent: View {
-    @ObservedObject var viewStore: ViewStoreOf<CustomTcaAlert>
+    let store: StoreOf<CustomTcaAlert>
     let alertContent: () -> AlertContent
 
     internal init(
-        viewStore: ViewStoreOf<CustomTcaAlert>,
+        store: StoreOf<CustomTcaAlert>,
         @ViewBuilder alertContent: @escaping () -> AlertContent
     ) {
-        self.viewStore = viewStore
+        self.store = store
         self.alertContent = alertContent
     }
     
     func body(content: Content) -> some View {
         ZStack {
             content
-                .allowsHitTesting(viewStore.contentAllowsHitTesting)
+                .allowsHitTesting(store.contentAllowsHitTesting)
             
             Color.black
-                .opacity(viewStore.scrimOpacity)
-                .opacity(viewStore.endScrimOpacity)
+                .opacity(store.scrimOpacity)
+                .opacity(store.endScrimOpacity)
                 .edgesIgnoringSafeArea(.all)
                 .onTapGesture {
-                    viewStore.send(.scrimTapped)
+                    store.send(.scrimTapped)
                 }
             
             alertContent()
-                .offset(viewStore.modalOffset)
-                .opacity(viewStore.modalOpacity)
+                .offset(store.modalOffset)
+                .opacity(store.modalOpacity)
         }
     }
 }

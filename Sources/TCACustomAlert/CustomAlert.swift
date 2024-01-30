@@ -1,7 +1,9 @@
 import ComposableArchitecture
 import SwiftUI
 
-public struct CustomTcaAlert: ReducerProtocol {
+@Reducer
+public struct CustomTcaAlert: Reducer {
+    @ObservableState
     public struct State: Equatable {
         /// X, Y postion where the alert will appear from.
         /// Defaults to bottom of the screen.
@@ -48,6 +50,30 @@ public struct CustomTcaAlert: ReducerProtocol {
             self.isPresented = false
             self.dismissOnScrimTap = dismissOnScrimTap
         }
+        
+        init(
+            alertStartPosition: CGSize = .init(width: 0, height: 500),
+            alertPresentedPosition: CGSize = .zero,
+            alertEndPosition: CGSize = .init(width: 0, height: -500),
+            endScrimOpacity: CGFloat = 0.6,
+            dismissOnScrimTap: Bool = true,
+            modalOffset: CGSize = .zero,
+            modalOpacity: CGFloat = .zero,
+            scrimOpacity: CGFloat = .zero,
+            contentAllowsHitTesting: Bool = true,
+            isPresented: Bool = false
+        ) {
+            self.alertStartPosition = alertStartPosition
+            self.alertEndPosition = alertEndPosition
+            self.alertPresentedPosition = alertPresentedPosition
+            self.endScrimOpacity = endScrimOpacity
+            self.modalOffset = modalOffset
+            self.modalOpacity = modalOpacity
+            self.scrimOpacity = scrimOpacity
+            self.contentAllowsHitTesting = contentAllowsHitTesting
+            self.isPresented = isPresented
+            self.dismissOnScrimTap = dismissOnScrimTap
+        }
     }
     
     public enum Action: Equatable {
@@ -63,7 +89,7 @@ public struct CustomTcaAlert: ReducerProtocol {
     
     public init() {}
     
-    public func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
+    public func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .present:
             state.isPresented = true
@@ -94,16 +120,16 @@ public struct CustomTcaAlert: ReducerProtocol {
                 .run { send in
                     await send(.scrimOpacityChanged(opacity: .zero), animation: .default)
                 },
-                .task { [start = state.alertStartPosition] in
+                .run { [start = state.alertStartPosition] send in
                     /// After a delay, reset the original position of the modal.
                     try await clock.sleep(for: .milliseconds(500))
-                    return .modalOffsetChanged(offset: start)
+                    await send(.modalOffsetChanged(offset: start))
                 }
             )
             
         case .scrimTapped:
             guard state.dismissOnScrimTap else { return .none }
-            return .task { .dismiss }
+            return .send(.dismiss)
             
         case let .modalOffsetChanged(offset):
             state.modalOffset = offset
@@ -117,31 +143,5 @@ public struct CustomTcaAlert: ReducerProtocol {
             state.scrimOpacity = opacity
             return .none
         }
-    }
-}
-
-internal extension CustomTcaAlert.State {
-    init(
-        alertStartPosition: CGSize = .init(width: 0, height: 500),
-        alertPresentedPosition: CGSize = .zero,
-        alertEndPosition: CGSize = .init(width: 0, height: -500),
-        endScrimOpacity: CGFloat = 0.6,
-        dismissOnScrimTap: Bool = true,
-        modalOffset: CGSize = .zero,
-        modalOpacity: CGFloat = .zero,
-        scrimOpacity: CGFloat = .zero,
-        contentAllowsHitTesting: Bool = true,
-        isPresented: Bool = false
-    ) {
-        self.alertStartPosition = alertStartPosition
-        self.alertEndPosition = alertEndPosition
-        self.alertPresentedPosition = alertPresentedPosition
-        self.endScrimOpacity = endScrimOpacity
-        self.modalOffset = modalOffset
-        self.modalOpacity = modalOpacity
-        self.scrimOpacity = scrimOpacity
-        self.contentAllowsHitTesting = contentAllowsHitTesting
-        self.isPresented = isPresented
-        self.dismissOnScrimTap = dismissOnScrimTap
     }
 }

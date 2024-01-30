@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/combine-schedulers",
       "state" : {
-        "revision" : "882ac01eb7ef9e36d4467eb4b1151e74fcef85ab",
-        "version" : "0.9.1"
+        "revision" : "9dc9cbe4bc45c65164fa653a563d8d8db61b09bb",
+        "version" : "1.0.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-case-paths",
       "state" : {
-        "revision" : "c3a42e8d1a76ff557cf565ed6d8b0aee0e6e75af",
-        "version" : "0.11.0"
+        "revision" : "76d7791b5bda47df7e3d4690c4c3aaf089730707",
+        "version" : "1.2.1"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-clocks",
       "state" : {
-        "revision" : "20b25ca0dd88ebfb9111ec937814ddc5a8880172",
-        "version" : "0.2.0"
+        "revision" : "a8421d68068d8f45fbceb418fbf22c5dad4afd33",
+        "version" : "1.0.2"
       }
     },
     {
@@ -41,8 +41,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-composable-architecture",
       "state" : {
-        "revision" : "c9259b5f74892690cb04a9a8088b4a1789b05a7d",
-        "version" : "0.47.2"
+        "revision" : "30ab89daa4e392ecd2150f737c42dbb2336bbc04",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "swift-concurrency-extras",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-concurrency-extras",
+      "state" : {
+        "revision" : "bb5059bde9022d69ac516803f4f227d8ac967f71",
+        "version" : "1.1.0"
       }
     },
     {
@@ -50,8 +59,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-custom-dump",
       "state" : {
-        "revision" : "ead7d30cc224c3642c150b546f4f1080d1c411a8",
-        "version" : "0.6.1"
+        "revision" : "aedcf6f4cd486ccef5b312ccac85d4b3f6e58605",
+        "version" : "1.1.2"
+      }
+    },
+    {
+      "identity" : "swift-dependencies",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-dependencies",
+      "state" : {
+        "revision" : "adb04a8e35f07edc001877af9f9f97fcc21d409e",
+        "version" : "1.2.0"
       }
     },
     {
@@ -59,8 +77,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-identified-collections",
       "state" : {
-        "revision" : "fd34c544ad27f3ba6b19142b348005bfa85b6005",
-        "version" : "0.6.0"
+        "revision" : "d1e45f3e1eee2c9193f5369fa9d70a6ddad635e8",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-perception",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-perception",
+      "state" : {
+        "revision" : "42240120b2a8797595433288ab4118f8042214c3",
+        "version" : "1.1.1"
       }
     },
     {
@@ -73,12 +100,21 @@
       }
     },
     {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax",
+      "state" : {
+        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
+        "version" : "509.1.1"
+      }
+    },
+    {
       "identity" : "swiftui-navigation",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swiftui-navigation",
       "state" : {
-        "revision" : "ddc01cdcddfd30ef7a966049b2e1d251e224ad93",
-        "version" : "0.5.0"
+        "revision" : "78f9d72cf667adb47e2040aa373185c88c63f0dc",
+        "version" : "1.2.0"
       }
     },
     {
@@ -86,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
       "state" : {
-        "revision" : "16b23a295fa322eb957af98037f86791449de60f",
-        "version" : "0.8.1"
+        "revision" : "b58e6627149808b40634c4552fcf2f44d0b3ca87",
+        "version" : "1.1.0"
       }
     }
   ],

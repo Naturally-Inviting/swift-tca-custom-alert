@@ -2,13 +2,13 @@ import ComposableArchitecture
 import SwiftUI
 import TCACustomAlert
 
-struct AlertDemoReducer: ReducerProtocol {
-    
+@Reducer
+struct AlertDemoReducer: Reducer {
+    @ObservableState
     struct State: Equatable {
-        
         var alertState: CustomTcaAlert.State = .init()
         
-        var form: Form.State {
+        var form: FormFeature.State {
             get {
                 .init(
                     dismissOnScrimTap: alertState.dismissOnScrimTap,
@@ -34,45 +34,48 @@ struct AlertDemoReducer: ReducerProtocol {
     
     enum Action: Equatable {
         case alert(CustomTcaAlert.Action)
-        case form(Form.Action)
+        case form(FormFeature.Action)
     }
     
-    var body: some ReducerProtocol<State, Action> {
+    var body: some Reducer<State, Action> {
         Scope(state: \.form, action: /Action.form) {
-            Form()
+            FormFeature()
         }
         
         Scope(state: \.alertState, action: /Action.alert) {
             CustomTcaAlert()
         }
     }
+}
+
+
+@Reducer
+struct FormFeature {
+    @ObservableState
+    struct State: Equatable {
+        var dismissOnScrimTap = true
+        var scrimOpacity = 0.6
+        
+        var alertStartY: CGFloat = 500
+        var alertStartX: CGFloat = 500
+        
+        var alertPresentedY: CGFloat = 0
+        var alertPresentedX: CGFloat = 0
+        
+        var alertEndY: CGFloat = -500
+        var alertEndX: CGFloat = -500
+        
+        var scrimPercentage: String {
+            // Simple formatting for this use case.
+            String(format: "%.f%%", scrimOpacity * 100)
+        }
+    }
     
-    struct Form: ReducerProtocol {
-        struct State: Equatable {
-            @BindableState var dismissOnScrimTap = true
-            @BindableState var scrimOpacity = 0.6
-            
-            @BindableState var alertStartY: CGFloat = 500
-            @BindableState var alertStartX: CGFloat = 500
-            
-            @BindableState var alertPresentedY: CGFloat = 0
-            @BindableState var alertPresentedX: CGFloat = 0
-            
-            @BindableState var alertEndY: CGFloat = -500
-            @BindableState var alertEndX: CGFloat = -500
-            
-            var scrimPercentage: String {
-                // Simple formatting for this use case.
-                String(format: "%.f%%", scrimOpacity * 100)
-            }
-        }
-        
-        enum Action: Equatable, BindableAction {
-            case binding(BindingAction<State>)
-        }
-        
-        var body: some ReducerProtocol<State, Action> {
-            BindingReducer()
-        }
+    enum Action: Equatable, BindableAction {
+        case binding(BindingAction<State>)
+    }
+    
+    var body: some Reducer<State, Action> {
+        BindingReducer()
     }
 }

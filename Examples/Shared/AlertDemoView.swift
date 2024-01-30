@@ -4,53 +4,54 @@ import TCACustomAlert
 
 struct AlertDemoView: View {
     
-    private let store = Store(
+    let store = Store(
         initialState: .init(),
-        reducer: AlertDemoReducer()._printChanges()
+        reducer: {
+            AlertDemoReducer()
+                ._printChanges()
+        }
     )
     
     var body: some View {
-        WithViewStore(store) { viewStore in
-            ZStack {
-                FormView(
-                    store: self.store.scope(
-                        state: \.form,
-                        action: AlertDemoReducer.Action.form
-                    )
+        ZStack {
+            FormView(
+                store: self.store.scope(
+                    state: \.form,
+                    action: \.form
                 )
-                
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        Button("Present", action: { viewStore.send(.alert(.present)) })
-                            .padding()
-                        Spacer()
-                    }
-                    .background(.thinMaterial)
-                }
-                .frame(maxWidth: .infinity)
-            }
-            .customTcaAlert(
-                store.scope(
-                    state: \.alertState,
-                    action: AlertDemoReducer.Action.alert
-                ),
-                content: {
-                    VStack(spacing: 16) {
-                        Text("Hello")
-                            .font(.headline)
-                        Text("This is a custom Alert view! You can create any view to be presented. You can tap the scrim to dismiss by default, or you can tap dismiss below.")
-                        Button("Dismiss", action: { viewStore.send(.alert(.dismiss)) })
-                            .padding(.top)
-                    }
-                    .padding()
-                    .background()
-                    .cornerRadius(8)
-                    .padding(.horizontal)
-                }
             )
+            
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button("Present", action: { store.send(.alert(.present)) })
+                        .padding()
+                    Spacer()
+                }
+                .background(.thinMaterial)
+            }
+            .frame(maxWidth: .infinity)
         }
+        .customTcaAlert(
+            store.scope(
+                state: \.alertState,
+                action: \.alert
+            ),
+            content: {
+                VStack(spacing: 16) {
+                    Text("Hello")
+                        .font(.headline)
+                    Text("This is a custom Alert view! You can create any view to be presented. You can tap the scrim to dismiss by default, or you can tap dismiss below.")
+                    Button("Dismiss", action: { store.send(.alert(.dismiss)) })
+                        .padding(.top)
+                }
+                .padding()
+                .background()
+                .cornerRadius(8)
+                .padding(.horizontal)
+            }
+        )
     }
 }
 

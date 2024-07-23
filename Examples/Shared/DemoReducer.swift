@@ -38,11 +38,11 @@ struct AlertDemoReducer: Reducer {
     }
     
     var body: some Reducer<State, Action> {
-        Scope(state: \.form, action: /Action.form) {
+        Scope(state: \.form, action: \.form) {
             FormFeature()
         }
         
-        Scope(state: \.alertState, action: /Action.alert) {
+        Scope(state: \.alertState, action: \.alert) {
             CustomTcaAlert()
         }
     }

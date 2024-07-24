@@ -2,12 +2,12 @@ import ComposableArchitecture
 @testable import TCACustomAlert
 import XCTest
 
-@MainActor
 final class TCACustomAlertTests: XCTestCase {
+    @MainActor
     func testAlertPresentation() async throws {
         let store = TestStore(
             initialState: .init(),
-            reducer: CustomTcaAlert()
+            reducer: { CustomTcaAlert() }
         )
      
         let present = await store.send(.present) {
@@ -30,6 +30,7 @@ final class TCACustomAlertTests: XCTestCase {
         await present.cancel()
     }
     
+    @MainActor
     func testAlertDismiss() async throws {
         let store = TestStore(
             initialState: .init(
@@ -39,7 +40,7 @@ final class TCACustomAlertTests: XCTestCase {
                 contentAllowsHitTesting: false,
                 isPresented: true
             ),
-            reducer: CustomTcaAlert()
+            reducer: { CustomTcaAlert() }
         )
         
         let clock = TestClock()
@@ -74,6 +75,7 @@ final class TCACustomAlertTests: XCTestCase {
         await task.cancel()
     }
     
+    @MainActor
     func testScrimTap() async throws {
         let store = TestStore(
             initialState: .init(
@@ -83,7 +85,7 @@ final class TCACustomAlertTests: XCTestCase {
                 contentAllowsHitTesting: false,
                 isPresented: true
             ),
-            reducer: CustomTcaAlert()
+            reducer: { CustomTcaAlert() }
         )
         
         let clock = TestClock()
@@ -120,6 +122,7 @@ final class TCACustomAlertTests: XCTestCase {
         await task.cancel()
     }
     
+    @MainActor
     func testDisableScrimTap() async throws {
         let store = TestStore(
             initialState: .init(
@@ -130,7 +133,7 @@ final class TCACustomAlertTests: XCTestCase {
                 contentAllowsHitTesting: false,
                 isPresented: true
             ),
-            reducer: CustomTcaAlert()
+            reducer: { CustomTcaAlert() }
         )
 
         let task = await store.send(.scrimTapped)

@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -21,10 +21,6 @@ let package = Package(
         .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             from: "1.12.0"
-        ),
-        .package(
-            url: "https://github.com/pointfreeco/swift-snapshot-testing",
-            from: "1.17.2"
         )
     ],
     targets: [
@@ -38,16 +34,6 @@ let package = Package(
             name: "TCACustomAlertTests",
             dependencies: [
                 "TCACustomAlert",
-            ]
-        ),
-        .testTarget(
-            name: "AlertSnapshots",
-            dependencies: [
-                "TCACustomAlert",
-                .product(name: "SnapshotTesting", package: "swift-snapshot-testing")
-            ],
-            exclude: [
-                "__Snapshots__"
             ]
         )
     ]

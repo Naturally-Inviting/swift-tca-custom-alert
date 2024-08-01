@@ -120,7 +120,7 @@ public struct CustomTcaAlert: Reducer {
                 .run { send in
                     await send(.scrimOpacityChanged(opacity: .zero), animation: .default)
                 },
-                .run { [start = state.alertStartPosition] send in
+                .run { [start = state.alertStartPosition, clock] send in
                     /// After a delay, reset the original position of the modal.
                     try await clock.sleep(for: .milliseconds(500))
                     await send(.modalOffsetChanged(offset: start))
